@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.WorkoutWidget" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">#FFCC00</item>
+        <item name="colorPrimaryVariant">#CC9900</item>
+        <item name="colorOnPrimary">#111111</item>
+        <item name="colorSecondary">#FFCC00</item>
+        <item name="android:windowBackground">#111111</item>
+        <item name="android:colorBackground">#111111</item>
+    </style>
+</resources>

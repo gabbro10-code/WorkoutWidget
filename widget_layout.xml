@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/widget_background"
+    android:padding="12dp">
+
+    <!-- Step counter (tap to open app) -->
+    <TextView
+        android:id="@+id/tv_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Step 1 of 10"
+        android:textColor="#FFCC00"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.1"
+        android:paddingBottom="4dp"/>
+
+    <!-- Exercise name -->
+    <TextView
+        android:id="@+id/tv_exercise_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Push-Ups"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:maxLines="2"
+        android:ellipsize="end"/>
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Keep core tight, chest to floor"
+        android:textColor="#BBBBBB"
+        android:textSize="12sp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:paddingTop="2dp"
+        android:paddingBottom="8dp"/>
+
+    <!-- Timer / Reps area (tappable) -->
+    <LinearLayout
+        android:id="@+id/ll_timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/timer_background"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/tv_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:45"
+            android:textColor="#FFCC00"
+            android:textSize="28sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_timer_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="▶ Tap to start"
+            android:textColor="#BBBBBB"
+            android:textSize="11sp"/>
+
+    </LinearLayout>
+
+    <!-- Prev / Next buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_prev"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:text="◀ PREV"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_background"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:text="NEXT ▶"
+            android:textSize="12sp"
+            android:textColor="#111111"
+            android:backgroundTint="#FFCC00"
+            android:background="@drawable/btn_next_background"
+            android:layout_marginStart="4dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
